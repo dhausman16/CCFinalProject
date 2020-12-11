@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Results Page{% endblock %}
+
+{% block content %}
+<!-- the # sign is for staying on the same page; use "get" instead of post if needed -->
+<div class="spotify5050">
+  <body>
+    <p>Weather: {{coverage}} with a temperature of <br> {{temperature}} degrees Farenheit <br>
+      and wind speed of {{wind}}mph in {{place}}</p>
+    <p>Your current team's record is {{soccer_record}}</p>
+    <p>And, finally.... here's the url to your tailored made spotify playlist!!!</p>
+    <p>{{spotify_url}}</p>
+  </body>
+</div>
+{% endblock %}

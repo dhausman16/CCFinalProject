@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} Home Page{% endblock %}
+
+{% block content %}
+<!-- the # sign is for staying on the same page; use "get" instead of post if needed -->
+<div class="spotify5050">
+  <form action="#" method="post">
+    <p>Enter your country name (capitalization doens't matter and <br> be sure to use abbreviations for countries that are more than one name, ex. us/uk):</p>
+    <p><input type = "text" name = "countryName" /></p>
+    <p><input type = "submit" value = "submit" /></p>
+  </form>
+</div>
+{% endblock %}

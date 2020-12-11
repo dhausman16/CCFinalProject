@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %} Home Page{% endblock %}
+
+{% block content %}
+<!-- the # sign is for staying on the same page; use "get" instead of post if needed -->
+<div class="spotifyToken">
+  <form action="#" method="post">
+    <p>Please follow these instructions for getting a temporary spotify token:</p>
+    <p>1) Go to this link: https://developer.spotify.com/console/get-available-genre-seeds/</p>
+    <p>2) Click on the green "Get Token" button towards the button of the page</p>
+    <p>3) put a checkmark on "playlist-read-private" (nothing but that one) and click on "Request Token"</p>
+    <p>4) fill in your spotify info and login</p>
+    <p>5) copy the entire token that is now shown to the left of the "Get Token" button (use ctrl+a)</p>
+    <p>6) ctrl + v that token below</p>
+    <p><input type = "text" name = "spotifyToken" /></p>
+    <p><input type = "submit" value = "submit" /></p>
+  </form>
+</div>
+{% endblock %}

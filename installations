@@ -1,0 +1,4 @@
+#necessary things to instal
+
+pip install requests
+pip install flask

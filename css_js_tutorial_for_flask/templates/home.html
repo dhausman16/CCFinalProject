@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+  Home Page
+{% endblock %}
+{% block content %}
+<div class="title">
+  <h1>Soccer & Weather</h1>
+</div>
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/logo.png')}}">
+  </div>
+{% endblock %}
